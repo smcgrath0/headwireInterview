@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+}
+/*Homepage*/
+.homebg{
+  font-family: Muli;
+  background-image: url("../assets/hero-1.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 4;
+}
+
+.homebgContainer{
+  width: 40%;
+  margin-left: 20%;
+  display: flex;
+  padding-top: 20%;
+}
+
+.line{
+  background-color: white;
+  height: 1px;
+  width: 35%;
+  margin-top: 11%;
+  margin-right: 5%;
+}
+.homebgTextContainer {
+  color: white;
+}
+
+.homebgButtonContainer{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+}
+
+button{
+  border: none;
+  border-radius: 90px / 90px;
+  padding: 20px 30px;
+}
+
+.readMore{
+  background-color: white;
+  color: black
+}
+
+.contactUs{
+  background-color: blue;
+  color: white;
+}
