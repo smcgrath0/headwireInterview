@@ -12,7 +12,7 @@ export default class Homepage extends React.Component {
 
           </div>
           <div className="homebgTextContainer">
-            <h2>Professional Business Consulting</h2>
+            <h1>Professional Business Consulting</h1>
             <p>Business provides reliable business planning, management, and advisory services backed by years of experience in the industry.</p>
             <div className="homebgButtonContainer">
               <button className="readMore">Read more</button>

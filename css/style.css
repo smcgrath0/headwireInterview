@@ -26,7 +26,6 @@ button{
   width: 150px;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .links{
@@ -87,4 +86,86 @@ button{
 .contactUs{
   background-color: blue;
   color: white;
+}
+
+
+
+/*what we do section*/
+.whatWeDoContainer{
+  width: 100%;
+}
+.ourServices{
+  text-align: center;
+  margin: 50px auto 10px auto;
+  width: 150px;
+  font-size: 14px;
+  padding: 5px 0px;
+  color: blue;
+  background-color: rgba(173, 216, 230, 0.5);
+  border-radius: 90px / 90px;
+}
+.whatWeDoText{
+  font-size: 30px;
+  text-align: center;
+}
+.cardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5% 10%;
+}
+.card {
+  width: 280px;
+  height: 320px;
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 10px 3px rgba(236, 235, 235, 0.5);
+}
+.card > p {
+  color: rgb(132,145,165);
+}
+
+.iconContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  position: static;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+}
+.icon1{
+  background-image: url('../assets/icon1.png')
+}
+.icon2{
+  background-image: url('../assets/icon2.png')
+}
+.icon3{
+  background-image: url('../assets/icon3.png')
+}
+.icon4{
+  background-image: url('../assets/icon4.png')
+}
+.icon5{
+  background-image: url('../assets/icon5.png')
+}
+.icon6{
+  background-image: url('../assets/icon6.png')
+}
+
+.grayDot{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(236, 235, 235, 0.25);
+  position: absolute;
+  border-radius: 50%;
+  margin-left: -25px;
+  margin-top: 10px;
 }
