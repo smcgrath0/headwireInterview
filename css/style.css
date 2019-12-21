@@ -1,6 +1,51 @@
 body{
+  font-family: Muli;
   margin: 0;
 }
+
+button{
+  font-family: Muli;
+  border: none;
+  border-radius: 90px / 90px;
+  padding: 20px 30px;
+}
+
+/*Navbar*/
+.navbar{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.logo{
+  background-image: url('../assets/logo-inverse.png');
+  height: 34px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.links{
+  display: flex;
+}
+
+.link{
+  color: white;
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.signInButton{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 40px;
+}
+
 /*Homepage*/
 .homebg{
   font-family: Muli;
@@ -32,12 +77,6 @@ body{
   display: flex;
   justify-content: space-around;
   padding-bottom: 10%;
-}
-
-button{
-  border: none;
-  border-radius: 90px / 90px;
-  padding: 20px 30px;
 }
 
 .readMore{
