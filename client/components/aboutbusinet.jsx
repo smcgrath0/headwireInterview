@@ -3,7 +3,13 @@ import React from 'react';
 export default function AboutBusinet(props) {
   return (
     <div className="aboutbg">
-      <div className="aboutVideo"></div>
+      <div className="aboutVideo">
+        <div className="aboutVideoFilter">
+          <div className="playButtonContainer">
+            <div className="playButton"></div>
+          </div>
+        </div>
+      </div>
       <div className="aboutContent">
         <div className="aboutHeader">
           ABOUT BUSINET

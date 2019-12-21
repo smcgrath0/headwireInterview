@@ -3,6 +3,8 @@ import React from 'react';
 export default class WhatWeDo extends React.Component {
   constructor(props){
     super(props);
+    //makes it easy to add another card
+    //cardId is associated with the icon/background image
     this.state = {
       cards: [
         { cardId: '1', cardTitle: 'Market Analysis', cardMessage: 'We support your business with fact-based market research.'},
@@ -22,7 +24,7 @@ export default class WhatWeDo extends React.Component {
         <div className="cardContainer">
           {this.state.cards.map((card,index) => {
             return (
-              <Card card={card} />
+              <Card key={index} card={card} />
             )
           })}
         </div>
