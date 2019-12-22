@@ -13,19 +13,41 @@ button{
 /*Navbar*/
 .navbar{
   position: fixed;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
-  padding: 20px 20px;
+  padding: 20px 5%;
   align-items: center;
+  z-index: 2;
+}
+.nav-colored{
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  background-color: rgb(44,52,59);
+}
+.nav-transparent{
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  background-color: transparent;
 }
 
 .logo{
-  background-image: url('../assets/logo-inverse.png');
   height: 34px;
   width: 150px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.logo1{
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  background-image: url('../assets/logo-default.png');
+}
+
+.logo2{
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  background-image: url('../assets/logo-inverse.png');
 }
 
 .links{
@@ -36,6 +58,23 @@ button{
   color: white;
   font-size: 18px;
   margin: 0 20px;
+  cursor: pointer;
+}
+.link:hover{
+  color: rgb(51,117,236);
+}
+
+.pagesLink{
+  display: flex;
+}
+
+.pagesDropdown{
+  background-image: url('../assets/new-arrow-down.png');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  background-position: center;
 }
 
 .signInButton{
@@ -204,7 +243,7 @@ button{
   align-items: center;
 }
 .playButtonContainer{
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.25);
   background-color: transparent;
   border-radius: 8px / 8px;
   display: flex;
