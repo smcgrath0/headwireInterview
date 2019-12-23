@@ -353,12 +353,20 @@ button{
 
 .closed{
   height: 75px;
+  animation: close 1s;
 }
-
+ @keyframes close {
+   0% {height:200px}
+   100% {height:75px}
+ }
 .open{
-  height: 100%;
+  height: 200px;
+  animation: open 1s;
 }
-
+@keyframes open {
+   0% {height:75px}
+   100% {height:200px}
+ }
 .accordianElementTitleContainer{
   display: flex;
   justify-content: space-between;
