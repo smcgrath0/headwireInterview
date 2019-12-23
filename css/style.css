@@ -10,6 +10,10 @@ button{
   padding: 20px 40px;
 }
 
+.hidden{
+  display: none;
+}
+
 /*Navbar*/
 .navbar{
   position: fixed;
@@ -294,4 +298,53 @@ button{
 }
 .aboutText li {
   margin-bottom: 10px;
+}
+
+
+/*Accordian*/
+.accordianContainer{
+  padding: 10%;
+}
+
+.accordianElement{
+  border: 1px solid gray;
+  border-radius: 15px / 15px ;
+  width: 90%;
+  margin-bottom: 5%;
+  padding: 5%;
+  overflow: hidden;
+}
+
+.closed{
+  height: 75px;
+}
+
+.open{
+  height: 100%;
+}
+
+.accordianElementTitleContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordianElementTitleContainer:hover{
+  color: rgb(51,117,236);
+}
+.accordianDropdownArrow{
+  background-image: url('../assets/accordian-angle-down.png');
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-position: center;
+}
+
+.accordianDropdownX{
+  height: 20px;
+  width: 20px;
+}
+
+.accordianElementDescription{
+  margin-top: 7%;
 }
