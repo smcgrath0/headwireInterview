@@ -8,6 +8,9 @@ button{
   border: none;
   border-radius: 90px / 90px;
   padding: 20px 40px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  cursor: pointer;
 }
 
 .hidden{
@@ -40,6 +43,14 @@ button{
   width: 150px;
   background-repeat: no-repeat;
   background-position: center;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.logo:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 .logo1{
@@ -87,6 +98,13 @@ button{
   color: white;
   padding: 15px 40px;
 }
+.signInButton:hover{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
 
 /*Homepage*/
 .homebg{
@@ -126,10 +144,21 @@ button{
   color: black;
   font-family: Muli;
 }
+.readMore:hover{
+  color: rgb(51,117,236);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
 
 .contactUs{
   background-color: rgb(51,117,236);
   color: white;
+
+}
+.contactUs:hover{
+  color: black;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 
@@ -167,6 +196,13 @@ button{
   padding: 20px;
   border-radius: 2%;
   box-shadow: 0px 0px 10px 3px rgba(236, 235, 235, 0.5);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 .card > p {
   color: rgb(132,145,165);

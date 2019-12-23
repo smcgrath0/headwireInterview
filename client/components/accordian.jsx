@@ -31,7 +31,6 @@ export default class Accordian extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(event) {
-    // let { currentTab1, currentTab2, currentTab3, currentTab4 } = this.state;
     switch (event.target.classList.value) {
       case 'accordianDropdownArrow 1': {
         if (!this.state.tab1) {
@@ -86,7 +85,6 @@ export default class Accordian extends React.Component {
         })
       }
     }
-    console.log('target', event.target.classList);
   }
   render() {
     return (
@@ -117,7 +115,6 @@ export default class Accordian extends React.Component {
             </div>
           )
         })}
-
       </div>
     )
   }
