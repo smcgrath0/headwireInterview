@@ -6,10 +6,7 @@ import AboutBusinet from './aboutbusinet';
 import Accordian from './accordian';
 
 export default class App extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render(){
+  render() {
     return (
       <div>
         <Navbar />
@@ -18,6 +15,6 @@ export default class App extends React.Component {
         <AboutBusinet />
         <Accordian />
       </div>
-    )
+    );
   }
 }

@@ -26,5 +26,5 @@ export default function AboutBusinet(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

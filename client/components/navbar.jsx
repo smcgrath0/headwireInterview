@@ -1,32 +1,24 @@
 import React from 'react';
 
 export default class Navbar extends React.Component {
-  constructor(props){
-    super(props);
-
-  }
-  componentDidMount(){
+  componentDidMount() {
     window.onscroll = function (event) {
-      // console.log(event.srcElement.scrollingElement.scrollTop);
       var myNav = document.querySelector('.navbar');
       var logo = document.querySelector('.logo');
-
-      "use strict";
       if (event.srcElement.scrollingElement.scrollTop >= 200) {
         logo.classList.add('logo2');
         logo.classList.remove('logo1');
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-      }
-      else {
-        logo.classList.add('logo1')
+        myNav.classList.add('nav-colored');
+        myNav.classList.remove('nav-transparent');
+      } else {
+        logo.classList.add('logo1');
         logo.classList.remove('logo2');
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
+        myNav.classList.add('nav-transparent');
+        myNav.classList.remove('nav-colored');
       }
     };
   }
-  render(){
+  render() {
     return (
       <div className="navbar" >
         <div className="logo logo1">
@@ -47,10 +39,10 @@ export default class Navbar extends React.Component {
           </div>
           <div className="link pagesLink">
             Pages
-            {//can easily fix, if have fontawesome PRO, gives icon with adaptive color change instead of an image
+            {// can easily fix, if have fontawesome PRO, gives icon with adaptive color change instead of an image
             }
-            <div className="pagesDropdown" onClick={(event) => {
-              console.log(event.target)
+            <div className="pagesDropdown" onClick={event => {
+              console.log(event.target);
             }}></div>
           </div>
           <div className="link">
@@ -61,6 +53,6 @@ export default class Navbar extends React.Component {
           <button className="signInButton">Sign In</button>
         </div>
       </div>
-    )
+    );
   }
 }

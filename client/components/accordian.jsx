@@ -8,7 +8,7 @@ export default class Accordian extends React.Component {
       tab2: false,
       tab3: false,
       tab4: false
-    }
+    };
     this.elements = [
       {
         title: `What am I allowed to do with the templates?`,
@@ -26,7 +26,7 @@ export default class Accordian extends React.Component {
         title: `In what formats are your templates available?`,
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.`
       }
-    ]
+    ];
 
     this.handleClick = this.handleClick.bind(this);
   }
@@ -39,7 +39,7 @@ export default class Accordian extends React.Component {
             tab2: false,
             tab3: false,
             tab4: false
-          })
+          });
           break;
         }
       }
@@ -50,7 +50,7 @@ export default class Accordian extends React.Component {
             tab2: true,
             tab3: false,
             tab4: false
-          })
+          });
           break;
         }
       }
@@ -61,18 +61,18 @@ export default class Accordian extends React.Component {
             tab2: false,
             tab3: true,
             tab4: false
-          })
+          });
           break;
         }
       }
       case 'accordianDropdownArrow 4': {
-        if (!this.state.tab4){
+        if (!this.state.tab4) {
           this.setState({
             tab1: false,
             tab2: false,
             tab3: false,
             tab4: true
-          })
+          });
           break;
         }
       }
@@ -82,7 +82,7 @@ export default class Accordian extends React.Component {
           tab2: false,
           tab3: false,
           tab4: false
-        })
+        });
       }
     }
   }
@@ -93,19 +93,19 @@ export default class Accordian extends React.Component {
           let arrowHidden = '';
           let xHidden = ' hidden';
           let description = 'closed';
-          if (this.state['tab'+(index+1)]){
+          if (this.state['tab' + (index + 1)]) {
             arrowHidden = ' hidden';
             xHidden = '';
-            description = 'open'
+            description = 'open';
           }
           return (
-            <div key={index} className={"accordianElement " + description}>
+            <div key={index} className={'accordianElement ' + description}>
               <div className="accordianElementTitleContainer">
                 <h2 className="accordianElementTitle">{tab.title}</h2>
-                <div className={"accordianDropdownArrow " + (index + 1) + arrowHidden} onClick={this.handleClick}>
+                <div className={'accordianDropdownArrow ' + (index + 1) + arrowHidden} onClick={this.handleClick}>
 
                 </div>
-                <div className={"accordianDropdownX" + xHidden} onClick={this.handleClick}>
+                <div className={'accordianDropdownX' + xHidden} onClick={this.handleClick}>
                   <i className="fas fa-times-circle"></i>
                 </div>
               </div>
@@ -113,9 +113,9 @@ export default class Accordian extends React.Component {
                 {tab.description}
               </p>
             </div>
-          )
+          );
         })}
       </div>
-    )
+    );
   }
 }

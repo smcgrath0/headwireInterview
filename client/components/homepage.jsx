@@ -1,10 +1,7 @@
 import React from 'react';
 
 export default class Homepage extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render(){
+  render() {
     return (
       <div className="homebg">
         <div className="homebgContainer">
@@ -21,6 +18,6 @@ export default class Homepage extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
