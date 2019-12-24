@@ -7,7 +7,7 @@ button{
   font-family: Muli;
   border: none;
   border-radius: 90px / 90px;
-  padding: 20px 40px;
+  padding: 18px 40px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   cursor: pointer;
@@ -79,11 +79,6 @@ button{
   color: rgb(51,117,236);
 }
 
-.pagesLink{
-  /* display: flex; */
-  /* padding-bottom: 2%; */
-}
-
 .pagesDropdownButton{
   background-image: url('../assets/new-arrow-down.png');
   background-size: contain;
@@ -100,7 +95,6 @@ button{
 .dropdown > div {
   background-color: white;
   color: black;
-  /* width: 150%; */
   padding: 10px 20px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
@@ -153,7 +147,7 @@ button{
 
 .homebgButtonContainer{
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   padding-bottom: 10%;
 }
 
@@ -169,6 +163,7 @@ button{
 }
 
 .contactUs{
+  margin-left: 6%;
   background-color: rgb(51,117,236);
   color: white;
 
@@ -206,7 +201,7 @@ button{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5% 10%;
+  padding: 4% 10%;
 }
 .card {
   background-color:white;
@@ -216,7 +211,7 @@ button{
   text-align: center;
   padding: 20px;
   border-radius: 2%;
-  box-shadow: 0px 0px 10px 3px rgba(236, 235, 235, 0.5);
+  box-shadow: 0px 5px 15px 5px rgba(236, 235, 235, 0.8);
   transition-duration: 1s;
   transition-timing-function: ease;
 }
@@ -224,6 +219,9 @@ button{
   transform: scale(1.1);
   transition-duration: 1s;
   transition-timing-function: ease;
+}
+.card > h2 {
+  font-weight: 100;
 }
 .card > p {
   color: rgb(132,145,165);
@@ -323,7 +321,7 @@ button{
 }
 .aboutHeader{
   text-align: center;
-  margin: 50px 0 10px 0;
+  margin: 10px 0 10px 0;
   width: 150px;
   font-size: 12px;
   padding: 5px 0px;
@@ -349,14 +347,17 @@ button{
 }
 .aboutText > p {
   font-size: 14px;
+  padding-bottom: 14px;
 }
 .aboutText > ul {
-  margin-left: -22px
+  margin-left: -22px;
 }
 .aboutText li {
   margin-bottom: 10px;
 }
-
+.aboutText li:last-child {
+  margin-bottom: 14px;
+}
 
 /*Accordian*/
 .accordianContainer{

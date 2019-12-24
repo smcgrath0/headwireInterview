@@ -27,7 +27,6 @@ export default class Navbar extends React.Component {
     };
   }
   mouseEnter(event) {
-    console.log(event);
     this.setState({
       dropdown: ''
     });
@@ -61,9 +60,7 @@ export default class Navbar extends React.Component {
             Pages
             {// can easily fix, if have fontawesome PRO, gives icon with adaptive color change instead of an image
             }
-            <div className="pagesDropdownButton" onClick={event => {
-              console.log(event.target);
-            }}></div>
+            <div className="pagesDropdownButton"></div>
             <div className={'dropdown ' + this.state.dropdown}>
               <div>Page 1</div>
               <div>Page 2</div>
