@@ -80,18 +80,37 @@ button{
 }
 
 .pagesLink{
-  display: flex;
+  /* display: flex; */
+  /* padding-bottom: 2%; */
 }
 
-.pagesDropdown{
+.pagesDropdownButton{
   background-image: url('../assets/new-arrow-down.png');
   background-size: contain;
   width: 20px;
   height: 20px;
   margin-top: 4px;
   background-position: center;
+  float: right;
 }
-
+.dropdown{
+  position: absolute;
+  margin-top: 2px;
+}
+.dropdown > div {
+  background-color: white;
+  color: black;
+  /* width: 150%; */
+  padding: 10px 20px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.dropdown > div:hover {
+  background-color: rgb(51,117,236);
+  color: white;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
 .signInButton{
   background-color: transparent;
   border: 1px solid white;

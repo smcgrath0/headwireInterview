@@ -1,6 +1,14 @@
 import React from 'react';
 
 export default class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dropdown: 'hidden'
+    };
+    this.mouseEnter = this.mouseEnter.bind(this);
+    this.mouseLeave = this.mouseLeave.bind(this);
+  }
   componentDidMount() {
     window.onscroll = function (event) {
       var myNav = document.querySelector('.navbar');
@@ -18,6 +26,18 @@ export default class Navbar extends React.Component {
       }
     };
   }
+  mouseEnter(event) {
+    console.log(event);
+    this.setState({
+      dropdown: ''
+    });
+  }
+  mouseLeave(event) {
+    this.setState({
+      dropdown: 'hidden'
+    });
+  }
+
   render() {
     return (
       <div className="navbar" >
@@ -37,13 +57,18 @@ export default class Navbar extends React.Component {
           <div className="link">
             Pricing
           </div>
-          <div className="link pagesLink">
+          <div className="link pagesLink" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
             Pages
             {// can easily fix, if have fontawesome PRO, gives icon with adaptive color change instead of an image
             }
-            <div className="pagesDropdown" onClick={event => {
+            <div className="pagesDropdownButton" onClick={event => {
               console.log(event.target);
             }}></div>
+            <div className={'dropdown ' + this.state.dropdown}>
+              <div>Page 1</div>
+              <div>Page 2</div>
+              <div>Page 3</div>
+            </div>
           </div>
           <div className="link">
             Contact Us
