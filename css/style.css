@@ -112,7 +112,6 @@ button{
   background-image: url("../assets/hero-1.jpg");
   width: 100%;
   background-size: cover;
-  height: 4;
 }
 
 .homebgContainer{
@@ -165,7 +164,9 @@ button{
 
 /*what we do section*/
 .whatWeDoContainer{
+  background-color: rgb(249,248,248);
   width: 100%;
+  padding-top: 3%;
 }
 .ourServices{
   text-align: center;
@@ -189,6 +190,7 @@ button{
   padding: 5% 10%;
 }
 .card {
+  background-color:white;
   width: 280px;
   height: 320px;
   margin-bottom: 5%;
@@ -340,10 +342,11 @@ button{
 /*Accordian*/
 .accordianContainer{
   padding: 10%;
+  background-color: rgb(249,248,248);
 }
 
 .accordianElement{
-  border: 1px solid gray;
+  border: 1px solid rgba(173, 216, 230, 0.5);
   border-radius: 15px / 15px ;
   width: 90%;
   margin-bottom: 5%;
@@ -353,6 +356,7 @@ button{
 
 .closed{
   height: 75px;
+  background-color:transparent;
   animation: close 1s;
 }
  @keyframes close {
@@ -360,6 +364,8 @@ button{
    100% {height:75px}
  }
 .open{
+  background-color: white;
+  box-shadow: 0px 0px 15px 7px rgba(189, 189, 189, 0.5);
   height: 200px;
   animation: open 1s;
 }
@@ -378,15 +384,17 @@ button{
 }
 .accordianDropdownArrow{
   background-image: url('../assets/accordian-angle-down.png');
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-size: contain;
   background-position: center;
+  margin-right: -12px;
 }
 
 .accordianDropdownX{
   height: 20px;
   width: 20px;
+  font-size: 1.5rem;
 }
 
 .accordianElementDescription{
