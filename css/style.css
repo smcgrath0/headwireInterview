@@ -7,6 +7,8 @@ button{
   font-family: Muli;
   border: none;
   border-radius: 90px / 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
   padding: 18px 40px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
