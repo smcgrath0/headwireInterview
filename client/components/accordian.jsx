@@ -93,14 +93,16 @@ export default class Accordian extends React.Component {
           let arrowHidden = '';
           let xHidden = ' hidden';
           let description = 'closed';
+          let titleContainer = '';
           if (this.state['tab' + (index + 1)]) {
             arrowHidden = ' hidden';
             xHidden = '';
             description = 'open';
+            titleContainer = 'blueFont';
           }
           return (
             <div key={index} className={'accordianElement ' + description}>
-              <div className="accordianElementTitleContainer">
+              <div className={'accordianElementTitleContainer ' + titleContainer}>
                 <h2 className="accordianElementTitle">{tab.title}</h2>
                 <div className={'accordianDropdownArrow ' + (index + 1) + arrowHidden} onClick={this.handleClick}>
 

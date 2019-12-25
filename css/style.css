@@ -129,16 +129,17 @@ button{
 
 .homebgContainer{
   width: 40%;
-  margin-left: 20%;
+  margin-left: 10%;
   display: flex;
-  padding-top: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .line{
   background-color: white;
   height: 1px;
-  width: 35%;
-  margin-top: 11%;
+  width: 30%;
+  margin-top: 8%;
   margin-right: 5%;
 }
 .homebgTextContainer {
@@ -419,4 +420,8 @@ button{
 
 .accordianElementDescription{
   margin-top: 7%;
+}
+
+.blueFont{
+  color: rgb(51,117,236);
 }
