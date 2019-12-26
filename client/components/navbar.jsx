@@ -1,4 +1,5 @@
 import React from 'react';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 export default class Navbar extends React.Component {
   constructor(props) {
@@ -58,9 +59,9 @@ export default class Navbar extends React.Component {
           </div>
           <div className="link pagesLink" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
             Pages
-            {// can easily fix, if have fontawesome PRO, gives icon with adaptive color change instead of an image
-            }
-            <div className="pagesDropdownButton"></div>
+            <div id="pagesDropdownButton">
+              <KeyboardArrowDownIcon />
+            </div>
             <div className={'dropdown ' + this.state.dropdown}>
               <div>Page 1</div>
               <div>Page 2</div>

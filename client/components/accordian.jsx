@@ -1,4 +1,5 @@
 import React from 'react';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 export default class Accordian extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ export default class Accordian extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(event) {
-    const { value } = event.target.classList;
+    const { value } = event.target.parentElement.classList;
     const check = value[value.length - 1];
     this.setState({
       tab1: false,
@@ -59,10 +60,11 @@ export default class Accordian extends React.Component {
           return (
             <div key={index} className={'accordianElement ' + description}>
               <div className={'accordianElementTitleContainer ' + titleContainer}>
-                <h2 className="accordianElementTitle">{tab.title}</h2>
-                <div className={'accordianDropdownArrow ' + (index + 1) + arrowHidden} onClick={this.handleClick}>
-
+                <h2 className="accordianElementTitle" >{tab.title}</h2>
+                <div className={'accordianDropdownArrow ' + (index + 1) + arrowHidden}>
+                  <KeyboardArrowDownIcon onClick={this.handleClick} id="accordianDropdown"/>
                 </div>
+
                 <div className={'accordianDropdownX' + xHidden} onClick={this.handleClick}>
                   <i className="fas fa-times-circle"></i>
                 </div>
