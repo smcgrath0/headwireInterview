@@ -31,60 +31,16 @@ export default class Accordian extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(event) {
-    switch (event.target.classList.value) {
-      case 'accordianDropdownArrow 1': {
-        if (!this.state.tab1) {
-          this.setState({
-            tab1: true,
-            tab2: false,
-            tab3: false,
-            tab4: false
-          });
-          break;
-        }
-      }
-      case 'accordianDropdownArrow 2': {
-        if (!this.state.tab2) {
-          this.setState({
-            tab1: false,
-            tab2: true,
-            tab3: false,
-            tab4: false
-          });
-          break;
-        }
-      }
-      case 'accordianDropdownArrow 3': {
-        if (!this.state.tab3) {
-          this.setState({
-            tab1: false,
-            tab2: false,
-            tab3: true,
-            tab4: false
-          });
-          break;
-        }
-      }
-      case 'accordianDropdownArrow 4': {
-        if (!this.state.tab4) {
-          this.setState({
-            tab1: false,
-            tab2: false,
-            tab3: false,
-            tab4: true
-          });
-          break;
-        }
-      }
-      default: {
-        this.setState({
-          tab1: false,
-          tab2: false,
-          tab3: false,
-          tab4: false
-        });
-      }
-    }
+    const { value } = event.target.classList;
+    const check = value[value.length - 1];
+    this.setState({
+      tab1: false,
+      tab2: false,
+      tab3: false,
+      tab4: false
+    }, () => this.setState({
+      ['tab' + check]: true
+    }));
   }
   render() {
     return (
