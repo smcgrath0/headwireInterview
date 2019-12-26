@@ -46,19 +46,19 @@ export default class Navbar extends React.Component {
         </div>
         <div className="links">
           <div className="link">
-            Home
+            <p>Home</p>
           </div>
           <div className="link">
-            About Us
+            <p>About Us</p>
           </div>
           <div className="link">
-            Our Team
+            <p>Our Team</p>
           </div>
           <div className="link">
-            Pricing
+            <p>Pricing</p>
           </div>
           <div className="link pagesLink" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
-            Pages
+            <p>Pages</p>
             <div id="pagesDropdownButton">
               <KeyboardArrowDownIcon />
             </div>
@@ -69,7 +69,7 @@ export default class Navbar extends React.Component {
             </div>
           </div>
           <div className="link">
-            Contact Us
+            <p>Contact Us</p>
           </div>
         </div>
         <div className="signIn">
