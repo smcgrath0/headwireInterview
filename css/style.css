@@ -148,7 +148,6 @@ button{
 
 .homebgButtonContainer{
   display: flex;
-  /* justify-content: space-around; */
   padding-bottom: 10%;
 }
 
@@ -213,6 +212,9 @@ button{
   padding: 20px;
   border-radius: 2%;
   box-shadow: 0px 5px 15px 5px rgba(236, 235, 235, 0.8);
+  -moz-box-shadow:    0px 5px 15px 5px rgba(236, 235, 235, 0.8);
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(236, 235, 235, 0.8);
+
   transition-duration: 1s;
   transition-timing-function: ease;
 }
@@ -315,6 +317,8 @@ button{
 .playButton{
   border-style: solid;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   width: 20px;
   height: 20px;
   border-width: 10px 0px 10px 20px;
@@ -330,7 +334,6 @@ button{
   background-color: rgba(173, 216, 230, 0.25);
   border-radius: 90px / 90px;
   font-weight: 600;
-
 }
 .aboutContent {
   width: 30%;
@@ -402,6 +405,8 @@ button{
 .open{
   background-color: white;
   box-shadow: 0px 0px 15px 7px rgba(189, 189, 189, 0.5);
+  -moz-box-shadow:    0px 0px 15px 7px rgba(189, 189, 189, 0.5);
+  -webkit-box-shadow: 0px 0px 15px 7px rgba(189, 189, 189, 0.5);
   height: 200px;
   animation: open 1s;
   -webkit-animation: open 1s; /* Safari 4+ */
