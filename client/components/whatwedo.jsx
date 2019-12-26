@@ -31,7 +31,6 @@ export default class WhatWeDo extends React.Component {
       </div>
     );
   }
-
 }
 
 function Card(props) {
