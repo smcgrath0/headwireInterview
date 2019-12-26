@@ -12,6 +12,8 @@ export default function AboutBusinet(props) {
       </div>
       <div className="aboutContent">
         <div className="aboutHeader">
+          {// Could not spread out letters enough
+          }
           ABOUT BUSINET
         </div>
         <div className="aboutText">

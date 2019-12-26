@@ -1,4 +1,5 @@
 import React from 'react';
+// use Material-ui just for drop down icon because font-awesome requires PRO version
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 export default class Accordian extends React.Component {

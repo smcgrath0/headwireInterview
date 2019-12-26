@@ -1,4 +1,5 @@
 import React from 'react';
+// use Material-ui just for drop down icon because font-awesome requires PRO version
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 export default class Navbar extends React.Component {
@@ -9,23 +10,6 @@ export default class Navbar extends React.Component {
     };
     this.mouseEnter = this.mouseEnter.bind(this);
     this.mouseLeave = this.mouseLeave.bind(this);
-  }
-  componentDidMount() {
-    window.onscroll = function (event) {
-      var myNav = document.querySelector('.navbar');
-      var logo = document.querySelector('.logo');
-      if (event.srcElement.scrollingElement.scrollTop >= 200) {
-        logo.classList.add('logo2');
-        logo.classList.remove('logo1');
-        myNav.classList.add('nav-colored');
-        myNav.classList.remove('nav-transparent');
-      } else {
-        logo.classList.add('logo1');
-        logo.classList.remove('logo2');
-        myNav.classList.add('nav-transparent');
-        myNav.classList.remove('nav-colored');
-      }
-    };
   }
   mouseEnter(event) {
     this.setState({

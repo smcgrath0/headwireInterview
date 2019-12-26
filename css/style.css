@@ -379,21 +379,51 @@ button{
   height: 75px;
   background-color:transparent;
   animation: close 1s;
+  -webkit-animation: close 1s; /* Safari 4+ */
+  -moz-animation:    close 1s; /* Fx 5+ */
+  -o-animation:      close 1s; /* Opera 12+ */
 }
  @keyframes close {
    0% {height:200px}
    100% {height:75px}
  }
+ @-webkit-keyframes close {
+  0% {height:200px}
+  100% {height:75px}
+}
+@-moz-keyframes close {
+  0% {height:200px}
+  100% {height:75px}
+}
+@-o-keyframes close {
+  0% {height:200px}
+  100% {height:75px}
+}
 .open{
   background-color: white;
   box-shadow: 0px 0px 15px 7px rgba(189, 189, 189, 0.5);
   height: 200px;
   animation: open 1s;
+  -webkit-animation: open 1s; /* Safari 4+ */
+  -moz-animation:    open 1s; /* Fx 5+ */
+  -o-animation:      open 1s; /* Opera 12+ */
 }
 @keyframes open {
    0% {height:75px}
    100% {height:200px}
  }
+  @-webkit-keyframes open {
+  0% {height:75px}
+  100% {height:200px}
+}
+@-moz-keyframes open {
+  0% {height:75px}
+  100% {height:200px}
+}
+@-o-keyframes open {
+  0% {height:75px}
+  100% {height:200px}
+}
 .accordianElementTitleContainer{
   display: flex;
   justify-content: space-between;
