@@ -5,15 +5,13 @@ export default function AboutBusinet(props) {
     <div className="aboutbg">
       <div className="aboutVideo">
         <div className="aboutVideoFilter">
-          <div className="playButtonContainer">
+          <button className="playButtonContainer">
             <div className="playButton"></div>
-          </div>
+          </button>
         </div>
       </div>
       <div className="aboutContent">
         <div className="aboutHeader">
-          {// Could not spread out letters enough
-          }
           ABOUT BUSINET
         </div>
         <div className="aboutText">

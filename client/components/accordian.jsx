@@ -5,6 +5,10 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 export default class Accordian extends React.Component {
   constructor(props) {
     super(props);
+    // to add a new tab:
+    // 1. add to state,
+    // 2. add object to elements array containing title and description,
+    // 3. add tab in this.handleClick method
     this.state = {
       tab1: false,
       tab2: false,
@@ -34,7 +38,9 @@ export default class Accordian extends React.Component {
   }
   handleClick(event) {
     const { value } = event.target.parentElement.classList;
+    // check ex. 1, 2, 3, 4
     const check = value[value.length - 1];
+    // sets all tabs to false, then sets the one clicked to true
     this.setState({
       tab1: false,
       tab2: false,

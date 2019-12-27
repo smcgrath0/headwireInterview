@@ -1,10 +1,12 @@
 body{
-  font-family: Muli;
+  /*fallback fonts*/
+  font-family: Muli, Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
 button{
-  font-family: Muli;
+  /*fallback fonts*/
+  font-family: Muli, Arial, Helvetica, sans-serif;
   border: none;
   border-radius: 90px / 90px;
   -webkit-border-radius: 90px;
@@ -214,7 +216,6 @@ button{
   box-shadow: 0px 5px 15px 5px rgba(236, 235, 235, 0.8);
   -moz-box-shadow:    0px 5px 15px 5px rgba(236, 235, 235, 0.8);
   -webkit-box-shadow: 0px 5px 15px 5px rgba(236, 235, 235, 0.8);
-
   transition-duration: 1s;
   transition-timing-function: ease;
 }
@@ -319,21 +320,22 @@ button{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  width: 20px;
-  height: 20px;
-  border-width: 10px 0px 10px 20px;
+  width: 16px;
+  height: 16px;
+  border-width: 8px 0px 8px 16px;
   border-color: transparent transparent transparent white;
 }
 .aboutHeader{
   text-align: center;
+  letter-spacing: 2px;
   margin: 10px 0 10px 0;
-  width: 150px;
-  font-size: 12px;
+  width: 135px;
+  font-size: 10px;
   padding: 5px 0px;
   color: white;
   background-color: rgba(173, 216, 230, 0.25);
   border-radius: 90px / 90px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .aboutContent {
   width: 30%;
