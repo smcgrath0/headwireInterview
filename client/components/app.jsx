@@ -7,7 +7,7 @@ import Accordian from './accordian';
 
 export default class App extends React.Component {
   componentDidMount() {
-    // for nav
+    // for navbar, on window so felt it belonged in the app component
     window.onscroll = function (event) {
       var myNav = document.querySelector('.navbar');
       var logo = document.querySelector('.logo');
@@ -24,6 +24,7 @@ export default class App extends React.Component {
       }
     };
   }
+  // if I was setting up more than just the front page, I would probably use React Router, but for this application there is no need
   render() {
     return (
       <div>
