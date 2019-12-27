@@ -25,7 +25,7 @@ In order to run:
 
 - npm run script `dev`
 
-- open brower at http://localhost:3000
+- open brower at http://localhost:3000 once everything is compiled
 
 
 ![GIF of Live](/assets/demonstration.gif)
